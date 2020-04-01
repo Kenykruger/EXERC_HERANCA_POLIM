@@ -1,0 +1,84 @@
+<?php
+
+
+class Veiculo{
+
+public $modelo;
+
+public $velocidade;
+
+public $passageiros;
+
+public $combustivel;
+
+}
+
+
+
+class Carro extends Veiculo{
+
+public $portas;
+
+public $ano;
+
+
+
+public function Carro($mdl,$vlc,$psg,$cbv,$prt,$an){
+
+$this->modelo = $mdl;
+
+$this->velocidade = $vlc;
+
+$this->passageiros = $psg;
+
+$this->combustivel = $cbv;
+
+$this->portas = $prt;
+
+$this->ano = $an;
+
+}
+
+}
+
+class Aviao extends Veiculo{
+
+public $uso;
+
+public $tipo;
+
+
+
+public function aviao($mdl,$vlc,$psg,$cbv,$us,$tip){
+
+$this->modelo = $mdl;
+
+$this->velocidade = $vlc;
+
+$this->passageiros = $psg;
+
+$this->combustivel = $cbv;
+
+$this->uso = $us;
+
+$this->tipo = $tip;
+
+}}
+
+$car1 = new Carro("Ferrari","260 KM/h",4,"57 litros",4,2015);
+
+$car2 = new Carro("Camaro","215 KM/h",3,"48 litros",4,2013);
+
+print_r ($car1);
+
+print_r ($car2);
+
+$aviao1 = new Aviao("Antonov 225","620 KM/h",53,"6700 litros","transporte","transporte de pessoas");
+
+$av2 = new Aviao("Hughes H-4","570 KM/h",232,"7700 litros","transporte","transporte de pessoas");
+
+print_r ($aviao1);
+
+print_r ($aviao2);
+
+?>
