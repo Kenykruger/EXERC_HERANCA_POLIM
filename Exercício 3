@@ -1,0 +1,78 @@
+<?php
+
+
+class Animal{
+
+public $nome;
+
+public $idade;
+
+public $som;
+
+public $acao;
+
+
+
+public function setSom(){
+
+echo "{$this->nome} {$this->som}\n";
+
+}
+
+}
+
+Class Cachorro extends Animal{
+
+public function Cachorro($nm,$id,$sm){
+
+$this->nome = $nm;
+
+$this->idade = $id;
+
+$this->som = $sm;
+
+$this->acao= "correr";
+
+}}
+
+Class Cavalo extends Animal{
+
+public function Cavalo($nm,$id,$sm){
+
+$this->nome = $nm;
+
+$this->idade = $id;
+
+$this->som = $sm;
+
+$this->acao= "correr";
+
+}}
+
+Class Preguica extends Animal{
+
+public function Preguica($nm,$id,$sm){
+
+$this->nome = $nm;
+
+$this->idade = $id;
+
+$this->som = $sm;
+
+$this->acao= "subir em arvore";
+
+}}
+
+$anm1= new Cachorro("Lebron","5 anos","morder");
+
+$anm1->setSom();
+
+$anm2= new Cavalo("James","4","Pastar");
+
+$anm2->setSom();
+
+$anm3= new Preguica("Harden","6","Dormir");
+
+$anm3->setSom();
+
+?>
